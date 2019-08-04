@@ -16,7 +16,7 @@ default: &default
   username: <%= ENV.fetch("RAILS_DB_USERNAME", "root") %>
   password: <%= ENV.fetch("MYSQL_ROOT_PASSWORD", "") %>
   host: <%= ENV.fetch("RAILS_DB_HOST", "localhost") %>
-  socket: /tmp/mysql.sock
+  # socket: /tmp/mysql.sock
 
 development:
   <<: *default
